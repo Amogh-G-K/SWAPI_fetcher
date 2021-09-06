@@ -1,0 +1,12 @@
+* {
+  text-align: center;
+}
+
+mat-slider {
+  background-color: rgb(16, 141, 89);
+  border-radius: 2vh;
+}
+
+input {
+  text-align: left;
+}

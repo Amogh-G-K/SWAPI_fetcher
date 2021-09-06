@@ -1,0 +1,23 @@
+<!--<p>list works!</p>
+<mat-slider min="1" max="100" step="1" value="50"></mat-slider>
+-->
+<div class="listbody">
+  <div class="search">
+    <mat-form-field>
+      <input
+        type="text"
+        [(ngModel)]="search"
+        placeholder="Enter person or Film"
+      />
+    </mat-form-field>
+    <br />
+  </div>
+  <h2>List Of Films</h2>
+  <div class="listFilms" style="background-color: indigo; padding: 1vh">
+    <app-list-films *ngFor="let flm of film" [flm]="flm"></app-list-films>
+    {{ film[0].title }}
+  </div>
+  <div class="listFilms">
+    <app-list-people></app-list-people>
+  </div>
+</div>
